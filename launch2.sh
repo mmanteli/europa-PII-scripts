@@ -6,7 +6,7 @@ lang=$1
 source=$2
 files=$3
 
-full_path="/scratch/project_462000444/europa/source-data/${lang}/${source}/${lang}*${files}"
+full_path="/scratch/project_462000444/europa/source-data/${lang}/${source}/${lang}*_${files}"
 result_path="/scratch/project_462000444/europa/pii-masked/${lang}/${source}"
 
 #file_count=$(find "$full_path" -maxdepth 1 -type f | wc -l)
