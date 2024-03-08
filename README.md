@@ -14,6 +14,8 @@ Scripts used to redact PII on LUMI.
 
 ### Redaction
 
+**NOTE**: ```redact.py``` has hardcoded json-field, check that it maches your data.
+
 - from ```europa/source-data/{lang}/{source}/``` to ```europa/pii-masked/{lang}/{source}/```
 - chooses all files that contain the word "part" or "shard" (others are discarded, see ```launch.sh```/```launch2.sh```)
 - run ```launch.sh``` on LUMI
@@ -22,7 +24,7 @@ Scripts used to redact PII on LUMI.
 ./launch {lang} {source}     # this launches multiple batch scripts (run.sh)
 ```
 
-- throws an error if there are over 200 files (do not fit into LUMI small partition
+- throws an error if there are over 200 files (do not fit into LUMI small partition)
 - in this case, use ```launch2.sh```:
 
 ```
